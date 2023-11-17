@@ -1,0 +1,219 @@
+/*  --cor-amarelo: rgb(255,194,52);
+    --cor-marrom: rgb(63,31,9);
+    --cor-vermelho: rgb(233,28,28);*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+    list-style: none;
+    font-style: normal;
+    color: white;
+    --cor-primaria: rgb(240, 97, 14);
+    --cor-secundaria: rgb(25, 24, 27);
+    --sombra: rgba(0, 0, 0, 0.486);
+}
+
+/*  -- formatação geral --  */
+h1, h2, button, .header-nav-list{
+    text-transform: uppercase;
+}
+
+ul{
+    display: flex;
+}
+
+button{
+    border: none;
+    padding: 10px 30px;
+    border-radius: 5px;
+    box-shadow: 2px 3px 5px var(--sombra)x
+}
+
+.button1{
+    width: 170px;
+    border-radius: 2px;
+    margin: 8px;
+    margin-top: 10px;
+    background-color: var(--cor-secundaria);
+}
+
+.margin1{
+    margin: 2.5px 5px; /*criar variavel*/
+}
+
+body{
+    background-color: rgb(143, 135, 135);
+}
+
+/*  -- header --  */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    background-color: rgb(54, 51, 51);
+}
+
+.header-logo{
+    width: 60px;
+}
+
+.header-nav > ul{
+    display: flex;
+    gap: 15px;
+}
+
+/*  -- banner --  */
+.banner{
+    background-color: brown;
+    display: flex;
+    padding: 120px 0px 30px 30px;
+}
+
+.banner-text-area{  
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.banner-linkbutton{
+    padding: 10px;
+    padding-left: 0px;
+}
+
+.banner-linkbutton > button{
+    background-color: var(--cor-primaria);
+}
+
+/*  -- sec-dancetour --  */
+.sec-dancetour{
+    background-color: var(--cor-primaria);
+    padding: 50px;
+    display: flex; /*criar variavel comum 02 - display flex*/
+    flex-direction: column;
+    align-items: center;
+}
+
+.sec-dancetour > p{
+    padding: 30px;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.dancetour-cards{
+    display: flex;
+    gap: 20px; /*criar variável*/
+}
+
+.dancetour-card{
+    border: 1px solid black;
+    padding-top: 140px;
+    background-color: aliceblue;
+}
+
+.imgcard-textarea{
+    background-color: var(--cor-secundaria);
+    display: flex; /*criar variavel comum 02 - display flex*/
+    flex-direction: column;
+    align-items: center;
+    text-align: center; /*juntar com outros cards, criar variavel 'card'*/
+    padding: 10px;
+}
+
+/*  -- sec-princing --  */
+.sec-pricing{
+    background-color: var(--cor-secundaria);
+    padding: 50px;
+    display: flex; /*criar variavel comum 02 - display flex*/
+    flex-direction: column;
+    align-items: center;
+}
+
+.sec-pricing > p{ /*criar variavel comum 01*/
+    text-align: center;
+    margin: 35px;
+}
+
+.pricing-cards{
+    display: flex;
+    gap: 20px; /*criar variável*/
+}
+
+.pricing-card{
+    background-color: var(--cor-primaria);
+    display: flex;  /*criar variavel comum 02 - display flex*/
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    padding-top: 140px;
+    width: 200px; /*modificar*/
+    /*colocar fonte condensada*/
+    /*juntar com outros cards, criar variavel 'card'*/
+}
+
+/*  -- sec-readmore --  */
+.sec-readmore{
+    background-color: var(--cor-primaria);
+    display: flex;
+    flex-direction: column;
+}
+
+.div-amazingdance, .div-bestdance{
+    display: flex;
+}
+
+.sec-amazingdance, .sec-bestdance, .readmore-img{
+    width: 50%;
+    padding: 120px 70px;
+}
+
+.readmore-img{
+    background-color: brown;
+}
+
+/*  -- sec-ourstatistcs --  */
+.sec-ourstatistcs{
+    background-color: var(--cor-secundaria);
+    padding: 50px;
+    display: flex; /*criar variavel comum 02 - display flex*/
+    flex-direction: column;
+    align-items: center;
+}
+
+.sec-ourstatistcs > p{ /*criar variavel comum 01*/
+        text-align: center;
+        margin: 35px;
+}
+
+.ourstatistics-cards{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.ourstatistics-card{
+    display: flex; /*criar variavel comum 02 - display flex*/
+    flex-direction: column;
+    align-items: center;
+}
+
+.sec-citacao-hebertsimon{
+    padding: 150px 100px;
+    display: flex; /*criar variavel comum 02 - display flex*/
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--cor-primaria);
+}
+
+.sec-citacao-hebertsimon > p{
+    margin: 20px;
+    text-align: center;
+}
+
+.nome-autor{
+    text-transform: uppercase;
+}
