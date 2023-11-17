@@ -11,8 +11,8 @@
     list-style: none;
     font-style: normal;
     color: white;
-    --cor-primaria: rgb(240, 97, 14);
-    --cor-secundaria: rgb(25, 24, 27);
+    --cor-primaria: #ff6311;
+    --cor-secundaria: #2c2b2b; 
     --sombra: rgba(0, 0, 0, 0.486);
 }
 
@@ -32,6 +32,7 @@ button{
     box-shadow: 2px 3px 5px var(--sombra)x
 }
 
+/*  -- padronizacao --  */
 .button1{
     width: 170px;
     border-radius: 2px;
@@ -44,8 +45,10 @@ button{
     margin: 2.5px 5px; /*criar variavel*/
 }
 
-body{
-    background-color: rgb(143, 135, 135);
+.dispflex-column-center{
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
 }
 
 /*  -- header --  */
@@ -54,7 +57,7 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 20px 30px;
-    background-color: rgb(54, 51, 51);
+    background-color: var(--cor-secundaria);
 }
 
 .header-logo{
@@ -71,6 +74,10 @@ header{
     background-color: brown;
     display: flex;
     padding: 120px 0px 30px 30px;
+    background-image: url(img/banner.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; /*criar variavel para background*/
 }
 
 .banner-text-area{  
@@ -93,9 +100,6 @@ header{
 .sec-dancetour{
     background-color: var(--cor-primaria);
     padding: 50px;
-    display: flex; /*criar variavel comum 02 - display flex*/
-    flex-direction: column;
-    align-items: center;
 }
 
 .sec-dancetour > p{
@@ -106,20 +110,24 @@ header{
 
 .dancetour-cards{
     display: flex;
-    gap: 20px; /*criar variável*/
+    gap: 20px; /*criar variavel*/;
 }
 
+/*  -- dancetour-card --  */
 .dancetour-card{
-    border: 1px solid black;
-    padding-top: 140px;
-    background-color: aliceblue;
+    padding-top: 200px 0px;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.dancetour-imgcard{
+    width: 100%;
+    margin: 0px;
 }
 
 .imgcard-textarea{
     background-color: var(--cor-secundaria);
-    display: flex; /*criar variavel comum 02 - display flex*/
-    flex-direction: column;
-    align-items: center;
     text-align: center; /*juntar com outros cards, criar variavel 'card'*/
     padding: 10px;
 }
@@ -128,9 +136,6 @@ header{
 .sec-pricing{
     background-color: var(--cor-secundaria);
     padding: 50px;
-    display: flex; /*criar variavel comum 02 - display flex*/
-    flex-direction: column;
-    align-items: center;
 }
 
 .sec-pricing > p{ /*criar variavel comum 01*/
@@ -145,9 +150,6 @@ header{
 
 .pricing-card{
     background-color: var(--cor-primaria);
-    display: flex;  /*criar variavel comum 02 - display flex*/
-    flex-direction: column;
-    align-items: center;
     padding: 10px;
     padding-top: 140px;
     width: 200px; /*modificar*/
@@ -172,16 +174,22 @@ header{
 }
 
 .readmore-img{
-    background-color: brown;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; /*criar variavel para background*/}
+
+.amazingdance-img{
+    background-image: url(img/sec3-im1.png);
+}
+
+.bestdance-img{
+    background-image: url(img/sec3-im2.png);
 }
 
 /*  -- sec-ourstatistcs --  */
 .sec-ourstatistcs{
     background-color: var(--cor-secundaria);
     padding: 50px;
-    display: flex; /*criar variavel comum 02 - display flex*/
-    flex-direction: column;
-    align-items: center;
 }
 
 .sec-ourstatistcs > p{ /*criar variavel comum 01*/
@@ -195,18 +203,13 @@ header{
     width: 80%;
 }
 
-.ourstatistics-card{
-    display: flex; /*criar variavel comum 02 - display flex*/
-    flex-direction: column;
-    align-items: center;
-}
-
+/*  -- sec-citacao-hebertsimon --  */
 .sec-citacao-hebertsimon{
     padding: 150px 100px;
-    display: flex; /*criar variavel comum 02 - display flex*/
-    flex-direction: column;
-    align-items: center;
-    background-color: var(--cor-primaria);
+    background-image: url(img/sec-4.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; /*criar variavel para background*/
 }
 
 .sec-citacao-hebertsimon > p{
@@ -216,4 +219,53 @@ header{
 
 .nome-autor{
     text-transform: uppercase;
+}
+
+/*  -- sec-cadastro --  */
+.sec-cadastro{
+    padding: 100px;
+    background-color: var(--cor-primaria);
+}
+
+.sec-cadastro > p{
+    text-align: center;
+}
+
+.search-area{
+    display: flex;
+}
+
+.search-area > button{
+    background-color: var(--cor-secundaria);
+    border: none;
+    border-radius: 0px;
+}
+
+footer{
+    background-color: var(--cor-secundaria);
+    padding: 50px;
+    padding-bottom: 100px;
+    display: flex;
+}
+
+.footer-apresentation{
+    width: 40%;
+}
+
+.footer-nav{
+    width: 60%;
+}
+
+.footer-nav > ul{
+    display: flex;
+    gap: 15px;
+}
+
+.footer-nav-list{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-nav-list > li{
+    text-transform: capitalize;
 }
